@@ -593,6 +593,7 @@ h1 span{
     font-family:"Cormorant Garamond",serif;
 
     font-size:32px;
+    color:#6F4E37;
 
     font-weight:600;
 
@@ -623,6 +624,13 @@ h1 span{
     line-height:1.6; 
 }
 
+.location-time{
+    font-size:24px;
+    font-weight:500;
+    color:#81521f;
+    text-align:center;
+    margin:20px 0 30px;
+}
 .btn{
     display:inline-block;
     margin-top:20px;
@@ -896,13 +904,15 @@ h1 span{
 
 .info h3{
 
-    font-size:36px;
+    font-size:34px;
 
-    font-weight:500;
-
-    margin-bottom:12px;
+    margin-bottom:10px;
 
     font-family:"Cormorant Garamond",serif;
+
+    color:#6F4E37;
+
+    font-weight:600;
 
 }
 
