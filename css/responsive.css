@@ -1,0 +1,131 @@
+@media(max-width:768px){
+
+    h1{
+
+        font-size:70px;
+
+    }
+
+    h1 span{
+
+        font-size:45px;
+
+    }
+
+    .subtitle{
+
+        letter-spacing:5px;
+
+        font-size:11px;
+
+    }
+
+    .date{
+
+        left:20px;
+
+        top:20px;
+
+        font-size:14px;
+
+    }
+
+    .invitation h2{
+
+        font-size:42px;
+
+    }
+
+    .text{
+
+        font-size:18px;
+
+        line-height:1.8;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .countdown-title{
+
+        font-size:38px;
+
+    }
+
+    .timer{
+
+        gap:20px;
+
+    }
+
+    .time-box{
+
+        width:120px;
+
+    }
+
+    .time-box span{
+
+        font-size:50px;
+
+    }
+
+}
+
+.location h2{
+
+    font-size:42px;
+
+}
+
+.location-card{
+
+    width:100%;
+
+}
+
+@media(max-width:768px){
+
+    .timeline-line::before{
+    
+    left:25px;
+    
+    }
+    
+    .event{
+    
+    flex-direction:column;
+    
+    padding-left:50px;
+    
+    gap:10px;
+    
+    }
+    
+    .time{
+    
+    width:auto;
+    
+    font-size:18px;
+    
+    }
+    
+    .dot{
+    
+    position:absolute;
+    
+    left:16px;
+    
+    top:2px;
+    
+    }
+    
+    .timeline h2{
+    
+    font-size:38px;
+    
+    }
+    
+    }
