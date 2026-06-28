@@ -72,9 +72,11 @@ body{
     inset:0;
 
     background:linear-gradient(
-        rgba(0,0,0,.45),
-        rgba(0,0,0,.35),
-        rgba(0,0,0,.45)
+        to bottom,
+        rgba(0,0,0,.58) 0%,
+        rgba(0,0,0,.30) 35%,
+        rgba(0,0,0,.18) 55%,
+        rgba(0,0,0,.45) 100%
     );
 
 }
@@ -119,43 +121,48 @@ body{
 
     font-weight:300;
 
+    opacity:.9;
+
 }
 
 .subtitle{
 
-    color:white;
+    color:rgba(255,255,255,.92);
 
     text-transform:uppercase;
 
-    letter-spacing:12px;
+    letter-spacing:14px;
 
-    font-size:14px;
+    font-size:13px;
 
-    opacity:.95;
+    font-weight:300;
 
 }
 
 h1{
-
+    font-family:"Playfair Display", serif;
     font-size:110px;
+    font-weight:600;
 
-    font-weight:400;
+    line-height:1.05;
 
-    line-height:.95;
-    text-shadow: 0 5px 18px rgba(0,0,0,.35);
+    letter-spacing:1px;
 
+    text-shadow:
+0 5px 20px rgba(0,0,0,.45),
+0 0 35px rgba(255,255,255,.08);
 }
 
 h1 span{
-
     display:block;
-
+    font-family:"Playfair Display", serif;
     font-size:60px;
+    font-weight:300;
 
-    margin:10px 0;
+    margin:20px 0;
 
+    letter-spacing:0;
 }
-
 /* Стрілка */
 
 .scroll{
@@ -345,22 +352,27 @@ h1 span{
 }
 
 .small-title{
+    display:block;
+    text-align:center;
 
-    letter-spacing:8px;
+    font-size:28px;
+    font-weight:600;
 
-    font-size:13px;
+    letter-spacing:10px;
 
-    color:#9a8f84;
+    color:#B8956A;
 
-    margin-bottom:25px;
+    text-transform:uppercase;
 
+    margin-bottom:18px;
 }
+
 
 .invitation h2{
 
     font-family:"Cormorant Garamond",serif;
 
-    font-size:60px;
+    font-size:48px;
 
     font-weight:500;
 
@@ -420,9 +432,25 @@ h1 span{
 
     font-family:"Cormorant Garamond",serif;
 
-    font-size:55px;
+    font-size:48px;
 
-    margin-bottom:70px;
+    line-height:1.2;
+
+    margin-bottom:80px;
+
+}
+
+.count-subtitle{
+
+    margin-top:-40px;
+
+    margin-bottom:60px;
+
+    color:#888;
+
+    font-size:18px;
+
+    letter-spacing:2px;
 
 }
 
@@ -430,7 +458,7 @@ h1 span{
 
     display:flex;
 
-    gap:35px;
+    gap:70px;
 
     justify-content:center;
 
@@ -440,32 +468,64 @@ h1 span{
 
 .time-box{
 
-    width:150px;
+    width:180px;
+
+    position:relative;
+
+    padding-top:25px;
+
+}
+
+.time-box::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:70px;
+
+    height:2px;
+
+    background:#B8956A;
 
 }
 
 .time-box span{
 
-    font-size:70px;
+    display:block;
 
-    font-weight:300;
+    font-size:88px;
+
+    font-family:"Cormorant Garamond", serif;
+
+    font-weight:500;
 
     color:#222;
 
+    line-height:.9;
 }
 
 .time-box p{
 
-    margin-top:10px;
+    margin-top:12px;
 
-    letter-spacing:3px;
+    letter-spacing:5px;
 
     text-transform:uppercase;
 
-    font-size:13px;
+    font-size:15px;
 
-    color:#777;
+    letter-spacing:6px;
 
+    color:#9d8067;
+
+    font-weight:500;
 }
 
 /* ---------- LOCATION ---------- */
@@ -474,7 +534,7 @@ h1 span{
 
     min-height:100vh;
 
-    padding:100px 25px;
+    padding:80px 25px;
 
 }
 
@@ -482,7 +542,7 @@ h1 span{
 
     text-align:center;
 
-    font-size:55px;
+    font-size:48px;
 
     margin-bottom:70px;
 
@@ -504,9 +564,9 @@ h1 span{
 
 .location-card{
 
-    width:420px;
-
-    padding:45px;
+    width:480px;
+    min-height:auto;
+    padding:40px;
 
     border:1px solid #E9DED0;
 
@@ -517,8 +577,6 @@ h1 span{
     text-align:center;
 
     box-shadow:0 10px 40px rgba(0,0,0,.05);
-
-    transition:.45s;
 
 }
 
@@ -532,55 +590,59 @@ h1 span{
 
 .location-card h3{
 
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:32px;
+
+    font-weight:600;
+
     margin-bottom:25px;
 
-    font-size:28px;
+    line-height:1.2;
 
+}
+
+.location-card h3 span{
+    margin-right:8px;
 }
 
 .time{
-    font-size:24px;
-    font-weight:500;
-    color:#9b7b5a;
-    text-align:center;
-    white-space:nowrap;
-    margin:20px 0 30px;
+
+    width:100px;
+
+    font-size:45px;
+
+    font-weight:700;
+
+    color:#A9845C;
+
+}
+
+.location-card p{
+    font-size:18px;
+    line-height:1.6; 
 }
 
 .btn{
-
     display:inline-block;
-
-    margin-top:35px;
-
-    padding:18px 48px;
-
+    margin-top:20px;
+    padding:14px 34px;
     border:1px solid #B8956A;
-
-    color:#3b332d;
-
+    color:#7A6045;
     text-decoration:none;
-
-    letter-spacing:2px;
-
     text-transform:uppercase;
-
+    letter-spacing:3px;
     font-size:13px;
-
-    transition:.35s;
+    font-weight:500;
+    background:#fff;
+    border-radius:4px;
+    transition:.3s;
 
 }
 
 .btn:hover{
-
     background:#B8956A;
-
-    color:white;
-
-    transform:translateY(-4px);
-
-    box-shadow:0 12px 25px rgba(184,149,106,.25);
-
+    color:#fff;
 }
 
 /* ---------- DRESS CODE ---------- */
@@ -595,8 +657,7 @@ h1 span{
 
     align-items:center;
 
-    padding:100px 20px;
-
+    padding:90px 20px;
 }
 
 .dress-container{
@@ -609,15 +670,23 @@ h1 span{
 
 .section-title{
 
-    font-size:20px;
+    display:block;
 
-    letter-spacing:8px;
+    text-align:center;
 
-    margin-bottom:25px;
+    font-size:24px;
 
-    color:#d8c6af;
+    font-weight:600;
+
+    letter-spacing:10px;
+
+    margin-bottom:18px;
+
+    color:#B8956A;
 
     text-transform:uppercase;
+
+    margin-bottom:18px;
 
 }
 
@@ -625,9 +694,9 @@ h1 span{
 
     font-family:"Cormorant Garamond",serif;
 
-    font-size:52px;
+    font-size:48px;
 
-    font-weight:400;
+    font-weight:500;
 
     margin-bottom:70px;
 
@@ -641,7 +710,9 @@ h1 span{
 
     flex-wrap:wrap;
 
-    gap:40px;
+    gap:55px;
+
+    margin-top:30px;
 
 }
 
@@ -653,32 +724,44 @@ h1 span{
 
     align-items:center;
 
+    gap:12px;
+
+}
+
+.color p{
+
+    font-size:18px;
+
+    color:#444;
+
+    margin-top:8px;
+
+    font-weight:400;
+
 }
 
 .circle{
 
-    width:90px;
+    width:105px;
 
-    height:90px;
+    height:105px;
 
     border-radius:50%;
 
-    margin-bottom:15px;
+    margin-bottom:18px;
 
     transition:.4s;
 
     cursor:pointer;
-
 }
 
 .circle:hover{
 
-    transform:translateY(-8px) scale(1.12);
+    transform:translateY(-6px) scale(1.08);
 
-    box-shadow:0 18px 30px rgba(0,0,0,.15);
+    box-shadow:0 20px 35px rgba(0,0,0,.18);
 
 }
-
 /* Кольори */
 
 .white{
@@ -719,7 +802,7 @@ h1 span{
 
     min-height:100vh;
 
-    padding:120px 20px;
+    padding:90px 20px;
 
 }
 
@@ -735,9 +818,11 @@ h1 span{
 
     text-align:center;
 
-    font-size:52px;
+    font-size:48px;
 
     font-family:"Cormorant Garamond",serif;
+
+    font-weight:500;
 
     margin-bottom:80px;
 
@@ -759,7 +844,7 @@ h1 span{
 
     top:0;
 
-    width:2px;
+    width:3px;
 
     height:100%;
 
@@ -781,27 +866,25 @@ h1 span{
 
 }
 
-.time{
-
+.timeline .time{
     width:80px;
-
     font-size:20px;
-
     font-weight:600;
-
 }
 
 .dot{
 
-    width:18px;
+    width:22px;
 
-    height:18px;
+    height:22px;
 
     border-radius:50%;
 
     background:#B8956A;
 
-    border:4px solid #F7F3EE;
+    border:5px solid #F7F3EE;
+
+    box-shadow:0 0 0 3px rgba(184,149,106,.15);
 
 }
 
@@ -813,9 +896,11 @@ h1 span{
 
 .info h3{
 
-    font-size:28px;
+    font-size:36px;
 
-    margin-bottom:10px;
+    font-weight:500;
+
+    margin-bottom:12px;
 
     font-family:"Cormorant Garamond",serif;
 
@@ -823,9 +908,13 @@ h1 span{
 
 .info p{
 
-    color:#777;
+    color:#8B8B8B;
+
+    font-size:22px;
 
     line-height:1.8;
+
+    max-width:520px;
 
 }
 
@@ -845,7 +934,7 @@ h1 span{
 
 .divider::after{
 
-    content:"✦";
+    content:"♡";
 
     position:absolute;
 
@@ -918,13 +1007,11 @@ h1 span{
     }
     
     .ending h2{
-    
-        font-size:72px;
-    
-        font-family:"Great Vibes",cursive;
-    
-        margin-bottom:30px;
-    
+        font-family: "Playfair Display", serif;
+        font-size: 68px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        line-height: 1.2;
     }
     
     .ending p{
@@ -958,3 +1045,43 @@ h1 span{
         color:#B8956A;
     
     }
+
+    /* ==========================
+   MOBILE VERSION
+========================== */
+
+@media (max-width: 768px) {
+
+    section{
+        padding:70px 20px;
+    }
+
+    h2{
+        font-size:46px !important;
+        line-height:1.2;
+    }
+
+    p{
+        font-size:20px;
+        line-height:1.8;
+    }
+
+}
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:1s ease;
+
+}
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}

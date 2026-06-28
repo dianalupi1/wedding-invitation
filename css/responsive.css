@@ -1,131 +1,126 @@
-@media(max-width:768px){
+@media (max-width:768px){
 
-    h1{
-
-        font-size:70px;
-
+    /* HERO */
+    
+    .hero{
+        height:100svh;
+        padding:20px;
     }
-
-    h1 span{
-
-        font-size:45px;
-
-    }
-
-    .subtitle{
-
-        letter-spacing:5px;
-
-        font-size:11px;
-
-    }
-
+    
     .date{
-
-        left:20px;
-
-        top:20px;
-
-        font-size:14px;
-
+        top:25px;
+        left:25px;
+        font-size:16px;
     }
-
-    .invitation h2{
-
-        font-size:42px;
-
+    
+    .subtitle{
+        font-size:12px;
+        letter-spacing:6px;
     }
-
+    
+    h1{
+        font-size:72px;
+        line-height:.9;
+    }
+    
+    h1 span{
+        font-size:48px;
+    }
+    
+    /* Всі секції */
+    
+    section{
+        padding:70px 25px;
+    }
+    
+    .divider{
+        margin:40px auto;
+    }
+    
+    /* Заголовки */
+    
+    h2,
+    .invitation h2,
+    .location h2,
+    .timeline h2,
+    .countdown-title,
+    .dresscode h2,
+    .footer h2{
+        font-size:48px;
+        line-height:1.2;
+    }
+    
+    /* Текст */
+    
     .text{
-
-        font-size:18px;
-
+        font-size:20px;
         line-height:1.8;
-
     }
-
-}
-
-@media(max-width:768px){
-
-    .countdown-title{
-
-        font-size:38px;
-
-    }
-
+    
+    /* Таймер */
+    
     .timer{
-
-        gap:20px;
-
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        gap:30px;
     }
-
+    
     .time-box{
-
-        width:120px;
-
+        width:auto;
     }
-
+    
     .time-box span{
-
-        font-size:50px;
-
+        font-size:64px;
     }
-
-}
-
-.location h2{
-
-    font-size:42px;
-
-}
-
-.location-card{
-
-    width:100%;
-
-}
-
-@media(max-width:768px){
-
+    
+    /* Локації */
+    
+    .location-grid{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+    
+    .location-card{
+        width:100%;
+    }
+    
+    /* Dress Code */
+    
+    .colors{
+        justify-content:center;
+        gap:25px;
+    }
+    
+    .color{
+        width:95px;
+    }
+    
+    /* Таймлайн */
+    
     .timeline-line::before{
-    
-    left:25px;
-    
+        left:28px;
     }
     
     .event{
-    
-    flex-direction:column;
-    
-    padding-left:50px;
-    
-    gap:10px;
-    
+        padding-left:60px;
+        gap:10px;
     }
     
     .time{
-    
-    width:auto;
-    
-    font-size:18px;
-    
+        width:auto;
+        font-size:22px;
     }
     
     .dot{
-    
-    position:absolute;
-    
-    left:16px;
-    
-    top:2px;
-    
+        left:19px;
     }
     
-    .timeline h2{
+    /* Footer */
     
-    font-size:38px;
-    
+    .footer{
+        padding-bottom:80px;
     }
     
     }
+
+    

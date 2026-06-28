@@ -59,3 +59,37 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 hiddenElements.forEach(el => observer.observe(el));
+
+const music = document.getElementById("bgMusic");
+
+document.addEventListener("click", function(){
+
+    music.play();
+
+}, { once: true });
+
+const reveals = document.querySelectorAll(".reveal");
+
+function revealOnScroll(){
+
+    reveals.forEach((item,index)=>{
+
+        const top = item.getBoundingClientRect().top;
+
+        if(top < window.innerHeight - 120){
+
+            setTimeout(()=>{
+
+                item.classList.add("active");
+
+            }, index * 200);
+
+        }
+
+    });
+
+}
+
+window.addEventListener("scroll", revealOnScroll);
+
+revealOnScroll();
